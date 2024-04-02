@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'dotmenu.natesworks.com',
+	site: 'https://dotmenu.natesworks.com',
 	integrations: [
 		starlight({
 			title: 'Dotmenu Wiki',
