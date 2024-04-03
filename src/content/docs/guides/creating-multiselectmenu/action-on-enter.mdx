@@ -5,7 +5,7 @@ title: Action on Enter
 To set the action to run when enter is pressed, use the `ActionOnEnter` method.
 
 ```csharp
-multiselect.ActionOnEnter(() =>
+menu.ActionOnEnter(() =>
 {
     Console.WriteLine("Selected(tab) options:");
     foreach (var index in multiselect._selectedOptions)
