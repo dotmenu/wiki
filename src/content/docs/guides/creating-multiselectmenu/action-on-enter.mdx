@@ -1,9 +1,17 @@
+```mdx
 ---
-title: Getting Checked Options
+title: Action on Enter
 ---
 
-To get the selected option you can use the `GetCheckedOptions` method.
+To set the action to run when enter is pressed, use the `ActionOnEnter` method.
 
 ```csharp
-List<int> checkedOptions = menu.GetCheckedOptions();
+multiselect.ActionOnEnter(() =>
+{
+    Console.WriteLine("Selected(tab) options:");
+    foreach (var index in multiselect._selectedOptions)
+    {
+        Console.WriteLine($"Option {index + 1}");
+    }
+});
 ```
