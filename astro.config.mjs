@@ -29,9 +29,11 @@ export default defineConfig({
 						{ label: 'Prefix', link: '/guides/creating-menu/prefix' },
 						{ label: 'Selector', link: '/guides/creating-menu/selector' },
 						{ label: 'Dynamic Options', link: '/guides/creating-menu/dynamic-options' },
+						{ label: 'Change selected option', link: '/guides/creating-menu/change-selected-option' },
 						{ label: 'Assigning Shortcuts', link: '/guides/creating-menu/shortcuts' },
 						{ label: 'Editing Options', link: '/guides/creating-menu/editing' },
-						{ label: 'Running the Menu', link: '/guides/creating-menu/run' }
+						{ label: 'Running the Menu', link: '/guides/creating-menu/run' },
+						{ label: 'Alternative selection key', link: '/guides/creating-menu/alt-enter-key' }
 					]
 				},
 				{
@@ -47,9 +49,11 @@ export default defineConfig({
 						{ label: 'Prefix', link: '/guides/creating-multiselectmenu/prefix' },
 						{ label: 'Selector', link: '/guides/creating-multiselectmenu/selector' },
 						{ label: 'Dynamic Options', link: '/guides/creating-multiselectmenu/dynamic-options' },
+						{ label: 'Change selected option', link: '/guides/creating-multiselectmenu/change-selected-option' },
 						{ label: 'Assigning Shortcuts', link: '/guides/creating-multiselectmenu/shortcuts' },
 						{ label: 'Editing Options', link: '/guides/creating-multiselectmenu/editing' },
-						{ label: 'Running the Menu', link: '/guides/creating-multiselectmenu/run' }
+						{ label: 'Running the Menu', link: '/guides/creating-multiselectmenu/run' },
+						{ label: 'Alternative selection key', link: '/guides/creating-multiselectmenu/alt-enter-key' }
 					]
 				}
 			],
