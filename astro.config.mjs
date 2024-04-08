@@ -16,6 +16,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Installation', link: '/guides/getting-started/installation' },
 						{ label: 'Add using directive', link: '/guides/getting-started/directive' },
+						{ label: 'Beta information', link: '/guides/getting-started/beta' },
 					],
 				},
 				{
