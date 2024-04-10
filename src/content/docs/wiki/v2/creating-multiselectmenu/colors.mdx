@@ -1,0 +1,16 @@
+---
+title: Colors
+---
+
+You can customize the foreground and background colors using the `Colors` method.
+
+```csharp
+menu.Color(OptionColor.Yellow, OptionColor.Blue);
+menu.ColorsWhenSelected(OptionColor.Blue, OptionColor.Yellow);
+```
+
+Or customize them for specific options:
+
+```cs
+menu.AddOption(..., fg: OptionColor.White, bg: OptionColor.Black, selectedFg: OptionColor.Black, selectedBg: OptionColor.White);
+```
