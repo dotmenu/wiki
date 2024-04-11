@@ -26,11 +26,9 @@ menu.Build().Run();
 ## Chaining
 
 Menu.CreateDefaultBuilder()
-    .SetTitle("Sample")
+    .SetTitle("Example")
     .SetPrefix("")
     .SetSelector(">")
-    .AddOption<PlayOption>()
-    .AddOption<CreditsOption>()
     .AddOption(text: "Exit", static () => Environment.Exit(0))
     .Build()
     .Run();
