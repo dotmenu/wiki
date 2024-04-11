@@ -16,7 +16,6 @@ export default defineConfig({
 					items: [
 						{ label: 'Installation', link: '/wiki/v2/getting-started/installation' },
 						{ label: 'Add using directive', link: '/wiki/v2/getting-started/directive' },
-						{ label: 'Beta information', link: '/wiki/v2/getting-started/beta' },
 					],
 				},
 				{
