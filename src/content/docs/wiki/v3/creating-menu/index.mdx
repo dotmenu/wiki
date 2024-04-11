@@ -1,0 +1,72 @@
+---
+title: Creating menu
+---
+
+# Builders
+
+Currently, there are a few builders available to help you create menus:
+
+`Menu.CreateDefaultBuilder()`
+`Menu.CreateCenteredBuilder()`
+
+# Creating menu
+
+## Storing menu in variable
+
+var menu = Menu.CreateDefaultBuilder();
+menu.SetTitle("Sample");
+menu.SetPrefix("");
+menu.SetSelector(">");
+menu.AddOption<PlayOption>();
+menu.AddOption<CreditsOption>();
+menu.AddOption(text: "Exit", static () => Environment.Exit(0));
+
+menu.Build().Run();
+
+## Chaining
+
+Menu.CreateDefaultBuilder()
+    .SetTitle("Sample")
+    .SetPrefix("")
+    .SetSelector(">")
+    .AddOption<PlayOption>()
+    .AddOption<CreditsOption>()
+    .AddOption(text: "Exit", static () => Environment.Exit(0))
+    .Build()
+    .Run();
+
+# Setting title
+
+The title (formerly prompt) is the text shown before the menu options.
+
+```cs
+.SetTitle("Sample")
+```
+
+# Setting prefix
+
+The prefix is the text shown before an option name when it is not selected.
+
+```cs
+.SetPrefix("")
+```
+
+# Setting selector
+
+The prefix is the text shown before an option name when it is selected.
+
+```cs
+.SetSelector(">")
+```
+
+# Add option
+
+```cs
+.AddOption(text: "Exit", static () => Environment.Exit(0))
+```
+
+# Building and running
+
+```cs
+Build().Run();
+```
