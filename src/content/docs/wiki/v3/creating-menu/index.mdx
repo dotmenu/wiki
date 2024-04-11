@@ -25,6 +25,7 @@ menu.Build().Run();
 
 ## Chaining
 
+```cs
 Menu.CreateDefaultBuilder()
     .SetTitle("Example")
     .SetPrefix("")
@@ -32,6 +33,7 @@ Menu.CreateDefaultBuilder()
     .AddOption(text: "Exit", static () => Environment.Exit(0))
     .Build()
     .Run();
+```
 
 # Setting title
 
