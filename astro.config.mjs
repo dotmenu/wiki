@@ -12,6 +12,14 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'Beta',
+					items: [
+						{ label: 'Add using directive', link: '/wiki/v3/getting-started/directive' },
+						{ label: 'Creating menus', link: '/wiki/v3/creating-menu' },
+						{ label: 'Themes', link: '/wiki/v3/creating-menu/themes' },
+					],
+				},
+				{
 					label: 'Getting started',
 					items: [
 						{ label: 'Installation', link: '/wiki/v2/getting-started/installation' },

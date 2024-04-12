@@ -13,18 +13,19 @@ Currently, there are a few builders available to help you create menus:
 
 ## Storing menu in variable
 
+```cs
 var menu = Menu.CreateDefaultBuilder();
 menu.SetTitle("Sample");
 menu.SetPrefix("");
 menu.SetSelector(">");
-menu.AddOption<PlayOption>();
-menu.AddOption<CreditsOption>();
 menu.AddOption(text: "Exit", static () => Environment.Exit(0));
 
 menu.Build().Run();
+```
 
 ## Chaining
 
+```cs
 Menu.CreateDefaultBuilder()
     .SetTitle("Example")
     .SetPrefix("")
@@ -32,6 +33,7 @@ Menu.CreateDefaultBuilder()
     .AddOption(text: "Exit", static () => Environment.Exit(0))
     .Build()
     .Run();
+```
 
 # Setting title
 
