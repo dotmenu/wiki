@@ -18,7 +18,7 @@ var menu = Menu.CreateDefaultBuilder();
 menu.SetTitle("Sample");
 menu.SetPrefix("");
 menu.SetSelector(">");
-menu.AddOption(text: "Exit", static () => Environment.Exit(0));
+menu.AddOption(text: "Exit", action: Exit);
 
 menu.Build().Run();
 ```
@@ -30,7 +30,7 @@ Menu.CreateDefaultBuilder()
     .SetTitle("Example")
     .SetPrefix("")
     .SetSelector(">")
-    .AddOption(text: "Exit", static () => Environment.Exit(0))
+    .AddOption(text: "Exit", action: Exit)
     .Build()
     .Run();
 ```
@@ -62,7 +62,16 @@ The prefix is the text shown before an option name when it is selected.
 ## Add option
 
 ```cs
-.AddOption(text: "Exit", static () => Environment.Exit(0))
+.AddOption(text: "Exit", action: Exit)
+```
+
+## Actions
+
+An action is the method that will run when option is selected.
+
+```cs
+static void Exit() =>
+    Environment.Exit(exitCode: 0);
 ```
 
 ## Seperator
