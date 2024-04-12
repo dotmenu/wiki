@@ -1,0 +1,22 @@
+---
+title: Themes
+---
+
+# Specifying colors
+
+```cs
+public class CustomTheme : ITheme
+{
+    public ThemeColor Foreground { get; } = ThemeColor.White;
+    public ThemeColor Background { get; } = ThemeColor.Black;
+    public ThemeColor SelectionForeground { get; } = ThemeColor.Black;
+    public ThemeColor SelectionBackground { get; } = ThemeColor.White;
+}
+```
+
+# Using theme
+
+```cs
+ITheme customTheme = new CustomTheme();
+menu.SetTheme(customTheme);
+```
