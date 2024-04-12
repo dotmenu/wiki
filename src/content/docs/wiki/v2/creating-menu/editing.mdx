@@ -8,6 +8,12 @@ title: Editing options
 menu.option[index].SetText(text);
 ```
 
+## Set Action
+
+```cs
+menu.option[index].SetAction(action);
+``
+
 ## Set Hidden
 
 ```cs
@@ -18,6 +24,12 @@ menu.option[index].SetHidden(hidden);
 
 ```cs
 string text = menu.option[index].GetText();
+```
+
+## Get Action
+
+```cs
+var action = menu.option[index].GetAction();
 ```
 
 ## Get Hidden
