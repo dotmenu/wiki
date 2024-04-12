@@ -7,7 +7,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Dotmenu Wiki',
-			baseUrl: 'https://github.com/dotmenu/wiki/edit/master/',
+			editLink: {
+                        baseUrl: 'https://github.com/dotmenu/wiki/edit/master/',
+                        },
 			social: {
 				github: 'https://github.com/dotmenu/dotmenu',
 			},
