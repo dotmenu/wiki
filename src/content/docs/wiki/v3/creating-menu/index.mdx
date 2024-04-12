@@ -2,16 +2,16 @@
 title: Creating menu
 ---
 
-# Builders
+## Builders
 
 Currently, there are a few builders available to help you create menus:
 
 `Menu.CreateDefaultBuilder()`
 `Menu.CreateCenteredBuilder()`
 
-# Creating menu
+## Creating menu
 
-## Storing menu in variable
+### Storing menu in variable
 
 ```cs
 var menu = Menu.CreateDefaultBuilder();
@@ -23,7 +23,7 @@ menu.AddOption(text: "Exit", static () => Environment.Exit(0));
 menu.Build().Run();
 ```
 
-## Chaining
+### Chaining
 
 ```cs
 Menu.CreateDefaultBuilder()
@@ -35,7 +35,7 @@ Menu.CreateDefaultBuilder()
     .Run();
 ```
 
-# Setting title
+## Setting title
 
 The title (formerly prompt) is the text shown before the menu options.
 
@@ -43,7 +43,7 @@ The title (formerly prompt) is the text shown before the menu options.
 .SetTitle("Sample")
 ```
 
-# Setting prefix
+#s Setting prefix
 
 The prefix is the text shown before an option name when it is not selected.
 
@@ -59,13 +59,13 @@ The prefix is the text shown before an option name when it is selected.
 .SetSelector(">")
 ```
 
-# Add option
+## Add option
 
 ```cs
 .AddOption(text: "Exit", static () => Environment.Exit(0))
 ```
 
-# Seperator
+## Seperator
 
 The seperator can be used to seperate menu options.
 
@@ -73,7 +73,7 @@ The seperator can be used to seperate menu options.
 .AddSeparator('-', length: 10)
 ```
 
-# Building and running
+#s Building and running
 
 ```cs
 Build().Run();
