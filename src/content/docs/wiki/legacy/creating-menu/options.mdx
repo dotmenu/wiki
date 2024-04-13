@@ -1,0 +1,11 @@
+---
+title: Options
+---
+
+To add options, utilize the `AddOption` method. Provide the option name and the corresponding action.
+
+```csharp
+menu.AddOption(() => "Option 1", () => Console.WriteLine("You selected Option 1"));
+menu.AddOption(() => "Option 2", () => Console.WriteLine("You selected Option 2"));
+menu.AddOption(() => "Option 3", () => Console.WriteLine("You selected Option 3"));
+```
